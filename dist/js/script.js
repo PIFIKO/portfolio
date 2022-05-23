@@ -2,10 +2,14 @@ window.addEventListener('DOMContentLoaded', () => {
 const humburger = document.querySelector('.hambureger'),
       menu = document.querySelector('.menu'),
       closeElem= document.querySelector('.menu__close'),
-      social = document.querySelectorAll('[data-modal]');
+      social = document.querySelectorAll('[data-modal]'),
+      counters=document.querySelectorAll('.tehnologic__procent'),
+      lines=document.querySelectorAll('.tehnologic__block div');
     
-
-      
+//divider
+      counters.forEach((item , i) =>{
+          lines[i].style.width = item.innerHTML;
+      });
 
 //humburger
 humburger.addEventListener('click', ()=>{
