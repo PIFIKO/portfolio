@@ -119,13 +119,16 @@
                         <img class="img-svg " src="icons/about_me/web_development.svg" alt="">
                         <div>
                         <div class="tittle title_fz14"> <b>Web-разработка</b></div>
-                        <div class="title title_fz12"> <dl>
+                        <div class="title title_fz12"> 
+                            <dl>
                             <dt> БЭМ</dt>
-                            <dt>Редакторы:Photoshop,Zeplin,Figma,Avocode</dt>
-                             <dt>Мобильная адаптация сайтов</dt>
-                             <dt>Оптимизация сайтов  </dt>
-                             <dt>Валидация верстки по стандартам w3c</dt>
-                          </dl> </div>
+                            <dt>Редакторы:Photoshop,Figma, </dt>
+                            <dt>Avocode,zeplin </dt>
+                            <dt>Мобильная адаптация сайтов</dt>
+                            <dt>Оптимизация сайтов  </dt>
+                            <dt>Валидация верстки по стандартам w3c</dt>
+                          </dl> 
+                        </div>
                         </div>
                     </div>
                     <div class="skill__skills-item">
@@ -149,7 +152,7 @@
             </div>         
          </div>
     </section>
-    <section class="resume">
+   <!--  <section class="resume">
         <div class="container">
             <h2 class="title title_fz16 resume__title" > Опыт</h2>
             <div class="title resume__subtitle">Чем я буду полезен</div>
@@ -430,23 +433,30 @@
 
                     <form action="#" class="contackts__form">
                         <div  class="contackts__input">
-                            <input name="name" id="name" type="text">
+                            <input required name="name" id="name" type="text">
                             <label for="name">Ваше имя</label>
                         </div>
                         <div class="contackts__input">
-                            <input name="email" id="email" type="email">
+                            <input required name="email" id="email" type="email">
                             <label for="email">Ваша почта</label>
                         </div>
                         <div class="contackts__textarea">
                             <textarea name="text" id="text" ></textarea>
                             <label for="text">Ваше сообщение</label>
                         </div>
-                        <div><button class="contackts__btn btn">Отправить сообщение</button></div>
+                        <div class="contackts__triggers">
+                            <button class="contackts__btn btn">Отправить сообщение</button>
+                            <div class="contackts__polici">
+                                <input required type="checkbox">
+                                <span>Я согласен(а) с <a href="">политикой конфиденциальности</a></span>
+                            </div>
+                        </div>
+
                     </form>
             </div>
         </div>
         </div>
-    </section>
+    </section> -->
     <script src="js/script.js"></script>
 </body>
 </html>
