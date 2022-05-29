@@ -94,7 +94,12 @@
         <div class="container">
             <div class="skill__wrapper">
                 <div class="skill__photo">
-                    <img src="img/photo.jpg" alt="" >
+                    <!-- <img src="img/photo.jpg" alt="" > -->
+                    <picture>
+                        <source media="(max-width: 576px)"srcset="img/photo.jpg">
+                        <source media="(min-width: 577px)"srcset="img/photo.jpg">
+                        <img src="img/photo.jpg" alt="">
+                    </picture>
                 </div>
                 
                 <div class="skill__descr">
@@ -152,7 +157,7 @@
             </div>         
          </div>
     </section>
-   <!--  <section class="resume">
+     <section class="resume">
         <div class="container">
             <h2 class="title title_fz16 resume__title" > Опыт</h2>
             <div class="title resume__subtitle">Чем я буду полезен</div>
@@ -335,7 +340,7 @@
             </div>
         </div>
     </section>
-    <section class="portfolio">
+   <section class="portfolio">
         <div class="container">
             <h2 class="title title_fz16 tehnologic__title"  > Портфолио</h2>
             <div class="title title_center ">Мои работы</div>
@@ -363,56 +368,58 @@
             </div>
         </div>
     </section>
-    <section class="price" >
+    <section class="price">
         <div class="container">
-            <h2 class="title title_fz16 tehnologic__title"  > Прайс-лист</h2>
-            <div class="tehnologic__dividers"></div>
+            <h2 class="title title_fz16 tehnologic__title">Прайс-лист</h2>
+            <div class="price__divider"></div>
+    
             <div class="price__wrapper">
                 <div class="price__item">
-                    <ul>
-                        <div class="price__item-block">
-                        <li class="price__title">Landing-page</li>
-                        <li class="price__prices"><mark><b>Отсутствует</b></mark></li>
-                        <li class="price__descr vertica">Одностраничный сайт для презентации услуг/товаров/...</li>
-                        </div>
-                        <div class="price__item-block">
-                            <li class="price__title">Корпоративный сайт</li>
-                            <li class="price__prices"><mark><b>Отсутствует</b></mark></li>
-                            <li class="price__descr vertica">Сайт для вашего бизнеса или компании</li>
-                            </div>
-                            <div class="price__item-block">
-                                <li class="price__title">Интернет-магазин</li>
-                                <li class="price__prices"><mark><b>Отсутствует</b></mark></li>
-                                <li class="price__descr vertica">Инструмент для ваших продаж в сети</li>
-                                </div>
-                                    
-
-                        
-                    </ul>
+                    <div class="price__type">Landing-page</div>
+                    <div class="price__count">от 8000 руб.</div>
+                    <div class="price__descr">
+                        Одностраничный сайт для презентации услуг/товаров/...
+                    </div>
                 </div>
                 <div class="price__item">
-                    <ul>
-                        <div class="price__item-block">
-                            <li class="price__title">Web-приложение</li>
-                            <li class="price__prices"><mark><b>Отсутствует</b></mark></li>
-                            <li class="price__descr vertica">Приложение внутри браузера для лучшего комфорта</li>
-                            </div>
-                            <div class="price__item-block">
-                                <li class="price__title">Android/IOS Приложение</li>
-                                <li class="price__prices"><mark><b>Отсутствует</b></mark></li>
-                                <li class="price__descr vertica">Приложение для смартфона любой ОС</li>
-                                </div>
-                                <div class="price__item-block">
-                                    <li class="price__title">Дизайн</li>
-                                    <li class="price__prices"><mark><b>Отсутствует</b></mark></li>
-                                    <li class="price__descr vertica">Создам дизайн для вашего сайта/приложения...</li>
-                                    </div>
-                    </ul>
+                    <div class="price__type">Web-приложение</div>
+                    <div class="price__count">от 28000 руб.</div>
+                    <div class="price__descr">
+                        Приложение внутри браузера для лучшего комфорта
+                    </div>
+                </div>
+                <div class="price__item">
+                    <div class="price__type">Корпоративный сайт</div>
+                    <div class="price__count">от 20000 руб.</div>
+                    <div class="price__descr">
+                        Сайт для вашего бизнеса или компании
+                    </div>
+                </div>
+                <div class="price__item">
+                    <div class="price__type">Android/IOS Приложение</div>
+                    <div class="price__count">от 25000 руб.</div>
+                    <div class="price__descr">
+                        Приложение для смартфона любой ОС
+                    </div>
+                </div>
+                <div class="price__item">
+                    <div class="price__type">Интернет-магазин</div>
+                    <div class="price__count">от 30000 руб.</div>
+                    <div class="price__descr">
+                        Инструмент для ваших продаж в сети
+                    </div>
+                </div>
+                <div class="price__item">
+                    <div class="price__type">Дизайн</div>
+                    <div class="price__count">Индивидуально</div>
+                    <div class="price__descr">
+                        Создам дизайн для вашего сайта/приложения...
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="contackts" >
+       <!-- <section class="contackts" >
         <div class="container">
             <div class="contackts__wrapper">
                 <div class="contackts__photo">
@@ -456,7 +463,7 @@
             </div>
         </div>
         </div>
-    </section> -->
+    </section> --> 
     <script src="js/script.js"></script>
 </body>
 </html>
